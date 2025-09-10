@@ -1,0 +1,58 @@
+// ===== Structs =====
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+struct Point {
+    x: i64,
+    y: i64,
+    infinity: bool,
+}
+
+#[derive(Debug)]
+struct EllipticCurve {
+    a: i64,
+    b: i64,
+    p: i64, // modulus
+}
+
+// ===== Modular Arithmetic Helpers =====
+fn mod_add(a: i64, b: i64, p: i64) -> i64 {
+    // TODO: implement
+    0
+}
+
+fn mod_sub(a: i64, b: i64, p: i64) -> i64 {
+    // TODO: implement
+    0
+}
+
+fn mod_mul(a: i64, b: i64, p: i64) -> i64 {
+    // TODO: implement
+    0
+}
+
+fn mod_inv(a: i64, p: i64) -> i64 {
+    // TODO: implement
+    0
+}
+
+// ===== Elliptic Curve Methods =====
+impl EllipticCurve {
+    fn add(&self, p1: Point, p2: Point) -> Point {
+        // TODO: implement point addition
+        Point { x: 0, y: 0, infinity: true }
+    }
+
+    fn double(&self, p: Point) -> Point {
+        // TODO: implement point doubling
+        Point { x: 0, y: 0, infinity: true }
+    }
+
+    fn mul(&self, k: i64, p: Point) -> Point {
+        // TODO: implement scalar multiplication
+        Point { x: 0, y: 0, infinity: true }
+    }
+}
+
+// ===== Main =====
+fn main() {
+    // TODO: create curve and points, test functions
+}
